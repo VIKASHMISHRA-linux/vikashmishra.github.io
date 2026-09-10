@@ -4,35 +4,83 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vikash Mishra | Portfolio</title>
+    <title>Vikash Mishra | IT Administrator | DevOps Intern | Linux &amp; Cloud Support</title>
+    <meta name="description" content="Vikash Mishra — IT Administrator and DevOps Intern with hands-on experience in Linux, server administration, AWS, Jenkins, CI/CD, Git, MySQL, Apache, NGINX and networking." />
+    <meta name="author" content="Vikash Mishra" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#050d1a" />
+    <meta property="og:title" content="Vikash Mishra | IT Administrator | DevOps Intern" />
+    <meta property="og:description" content="IT Administrator and DevOps Intern with hands-on Linux, server, cloud, networking and cybersecurity experience." />
+    <meta property="og:image" content="images/Image.jpeg" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+    <link rel="apple-touch-icon" href="images/favicon-180.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Vikash Mishra",
+      "jobTitle": "IT Administrator & DevOps Intern",
+      "email": "vikashmishra0713@gmail.com",
+      "telephone": "+91-8528143401",
+      "address": { "@type": "PostalAddress", "addressCountry": "IN" },
+      "knowsAbout": ["Linux Administration", "DevOps", "Jenkins", "CI/CD", "AWS", "Git", "MySQL", "Apache", "NGINX", "Networking", "Cybersecurity", "Python"]
+    }
+    </script>
     <script src="js/script.js" defer></script>
-
 </head>
 
 <body>
 
+    <!-- SKIP LINK -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- SCROLL PROGRESS BAR -->
-    <div id="progress-bar"></div>
+    <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
 
     <!-- PARTICLE BACKGROUND -->
-    <canvas id="particles"></canvas>
+    <canvas id="particles" aria-hidden="true"></canvas>
 
     <!-- HEADER -->
     <header id="header">
         <div class="container nav">
-            <h2 class="logo">&lt;Vikash /&gt;</h2>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></div>
+            <span class="logo">&lt;Vikash /&gt;</span>
+            <nav aria-label="Primary navigation">
+                <ul class="nav-links" id="nav-links" role="list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#devops">DevOps</a></li>
+                    <li><a href="#networking">Networking</a></li>
+                    <li><a href="#cybersecurity">Security</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certs</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode" aria-pressed="false">
+                    <i class="fas fa-sun" aria-hidden="true"></i>
+                </button>
+                <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top" hidden>
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <main id="main-content">
 
     <!-- HERO -->
     <section id="home" class="hero">
@@ -40,16 +88,37 @@
             <div class="hero-text fade-in">
                 <p class="hero-greeting">Hello, I'm</p>
                 <h1>Vikash Mishra</h1>
-                <h3><span id="typing"></span><span class="cursor">|</span></h3>
-                <p class="hero-desc">Passionate about securing digital systems and building robust software solutions. Exploring the intersection of cybersecurity and modern development.</p>
+                <p class="hero-subtitle"><span id="typing"></span><span class="cursor" aria-hidden="true">|</span></p>
+                <div class="hero-badges" aria-label="Key focus areas">
+                    <span class="hero-badge"><i class="fab fa-linux" aria-hidden="true"></i> Linux Admin</span>
+                    <span class="hero-badge"><i class="fas fa-code-branch" aria-hidden="true"></i> DevOps</span>
+                    <span class="hero-badge"><i class="fab fa-aws" aria-hidden="true"></i> Cloud</span>
+                    <span class="hero-badge"><i class="fas fa-network-wired" aria-hidden="true"></i> Networking</span>
+                    <span class="hero-badge"><i class="fas fa-shield-alt" aria-hidden="true"></i> Security</span>
+                </div>
+                <p class="hero-desc">IT Administrator and DevOps Intern at NMG Technologies with hands-on experience in Linux/Ubuntu administration, server setup, AWS, Jenkins CI/CD, Git/GitHub, MySQL, Apache, NGINX and networking. Seeking IT Administrator, System Administrator, Linux Support or Junior DevOps roles.</p>
                 <div class="hero-btns">
-                    <a href="#projects" class="btn ripple">View Projects</a>
-                    <a href="assets/Vikash-ATS.pdf" download class="btn btn-outline ripple">Download Resume</a>
+                    <a href="#resume" class="btn ripple"><i class="fas fa-file-alt" aria-hidden="true"></i> View Resume</a>
+                    <a href="#projects" class="btn btn-outline ripple">View Projects</a>
+                    <a href="#contact" class="btn btn-outline ripple">Contact Me</a>
+                </div>
+                <div class="hero-contact">
+                    <a href="mailto:vikashmishra0713@gmail.com" class="hero-contact-link" aria-label="Send email to Vikash Mishra">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <span>vikashmishra0713@gmail.com</span>
+                    </a>
+                    <a href="tel:+918528143401" class="hero-contact-link" aria-label="Call Vikash Mishra">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <span>+91-8528143401</span>
+                    </a>
                 </div>
             </div>
             <div class="hero-img fade-in">
                 <div class="img-wrapper">
-                    <img src="images/Image.jpeg" alt="Vikash Mishra" />
+                    <picture>
+                        <source srcset="images/profile.webp" type="image/webp" />
+                        <img src="images/profile.jpg" alt="Vikash Mishra — IT Administrator and DevOps Intern" width="400" height="400" />
+                    </picture>
                 </div>
             </div>
         </div>
@@ -61,48 +130,446 @@
             <h2 class="section-title">About <span>Me</span></h2>
             <div class="about-grid">
                 <div class="about-text scroll-reveal">
-                    <p>I'm an MCA student with a deep passion for <span class="highlight">Cybersecurity</span> and <span class="highlight">IT Support</span> and <span class="highlight">Software Development</span>. I enjoy analyzing vulnerabilities, building
-                        secure applications, and continuously learning about emerging threats and technologies.</p>
-                    <p>My goal is to bridge the gap between development and security — writing code that is not only functional but also resilient against modern cyber threats.</p>
+                    <p>I am an IT Administrator and DevOps Intern with hands-on experience in <span class="highlight">Linux/Ubuntu administration</span>, server setup, software installation and troubleshooting. I work with <span class="highlight">AWS resource management</span>, <span class="highlight">Git/GitHub</span>, <span class="highlight">Jenkins</span> and CI/CD workflows, and maintain <span class="highlight">MySQL</span>, <span class="highlight">Apache</span> and <span class="highlight">NGINX</span> environments.</p>
+                    <p>I have practical experience in system performance troubleshooting, remote support via AnyDesk, repository management and basic cloud administration. I also have a strong foundation in <span class="highlight">networking</span>, <span class="highlight">Python</span> and vulnerability assessment.</p>
                     <div class="info-grid">
-                        <div><i class="fas fa-map-marker-alt"></i> India</div>
-                        <div><i class="fas fa-envelope"></i> vikashmishra0713@gmail.com</div>
-                        <div><i class="fas fa-graduation-cap"></i> MCA Student</div>
-                        <div><i class="fas fa-shield-alt"></i> Cybersecurity Enthusiast</div>
+                        <div><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Greater Noida, India</div>
+                        <div><i class="fas fa-envelope" aria-hidden="true"></i> vikashmishra0713@gmail.com</div>
+                        <div><i class="fas fa-graduation-cap" aria-hidden="true"></i> MCA — Lloyd Institute</div>
+                        <div><i class="fas fa-briefcase" aria-hidden="true"></i> IT Administrator &amp; DevOps Intern</div>
                     </div>
                 </div>
-                <div class="skills-box scroll-reveal">
-                    <h3>Skills & Tools</h3>
+                <div class="about-cards scroll-reveal">
+                    <div class="about-card">
+                        <div class="about-card-icon"><i class="fab fa-linux" aria-hidden="true"></i></div>
+                        <div>
+                            <h3>Linux &amp; Systems</h3>
+                            <p>Ubuntu/Linux administration, LAMP/WAMP stack, service configuration and system troubleshooting.</p>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon"><i class="fas fa-code-branch" aria-hidden="true"></i></div>
+                        <div>
+                            <h3>DevOps &amp; CI/CD</h3>
+                            <p>Jenkins job configuration, Git/GitHub repository management and automated build workflows.</p>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon"><i class="fab fa-aws" aria-hidden="true"></i></div>
+                        <div>
+                            <h3>Cloud &amp; Infrastructure</h3>
+                            <p>AWS resource and repository management. Azure, Docker, Kubernetes and Terraform — hands-on learning.</p>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon"><i class="fas fa-shield-alt" aria-hidden="true"></i></div>
+                        <div>
+                            <h3>Security Foundation</h3>
+                            <p>Nmap, Wireshark, Burp Suite and vulnerability assessment in authorized lab environments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">Work <span>Experience</span></h2>
+            <div class="experience-card scroll-reveal">
+                <div class="exp-header">
+                    <div class="exp-title-block">
+                        <h3>IT Administrator &amp; DevOps Intern</h3>
+                        <p class="exp-company"><i class="fas fa-building" aria-hidden="true"></i> NMG Technologies</p>
+                    </div>
+                    <div class="exp-meta">
+                        <span class="exp-duration"><i class="fas fa-calendar-alt" aria-hidden="true"></i> May 2026 – Nov 2026</span>
+                        <span class="exp-type">Internship</span>
+                    </div>
+                </div>
+                <div class="exp-groups">
+                    <div class="exp-group">
+                        <h4 class="exp-group-title"><i class="fab fa-linux" aria-hidden="true"></i> Linux &amp; System Administration</h4>
+                        <ul class="exp-responsibilities">
+                            <li>Administer Ubuntu/Linux systems including package installation, service configuration and command-line troubleshooting.</li>
+                            <li>Set up and maintain LAMP/WAMP environments including Apache, PHP and MySQL.</li>
+                            <li>Monitor system performance — CPU, RAM, disk usage, processes and services.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-group">
+                        <h4 class="exp-group-title"><i class="fas fa-code-branch" aria-hidden="true"></i> DevOps &amp; CI/CD</h4>
+                        <ul class="exp-responsibilities">
+                            <li>Configure Jenkins jobs, monitor builds and support basic CI/CD workflows.</li>
+                            <li>Manage Git/GitHub repositories — cloning, branching, committing, pushing and repository administration.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-group">
+                        <h4 class="exp-group-title"><i class="fab fa-aws" aria-hidden="true"></i> Cloud &amp; Repository Management</h4>
+                        <ul class="exp-responsibilities">
+                            <li>Manage AWS repositories and resources with basic permissions and access management.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-group">
+                        <h4 class="exp-group-title"><i class="fas fa-database" aria-hidden="true"></i> Database Administration</h4>
+                        <ul class="exp-responsibilities">
+                            <li>Create MySQL databases and perform basic database administration and troubleshooting.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-group">
+                        <h4 class="exp-group-title"><i class="fas fa-network-wired" aria-hidden="true"></i> Networking &amp; Remote Support</h4>
+                        <ul class="exp-responsibilities">
+                            <li>Support basic networking and connectivity troubleshooting involving TCP/IP, DNS, DHCP, IP addressing and SSH.</li>
+                            <li>Provide remote desktop and technical support using AnyDesk, resolving software, configuration and system issues.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-tags">
+                    <span>Ubuntu/Linux</span><span>Apache</span><span>MySQL</span><span>PHP</span>
+                    <span>Jenkins</span><span>CI/CD</span><span>Git</span><span>GitHub</span>
+                    <span>AWS</span><span>AnyDesk</span><span>LAMP</span><span>WAMP</span>
+                    <span>NGINX</span><span>TCP/IP</span><span>SSH</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Technical <span>Skills</span></h2>
+            <div class="skills-grid">
+
+                <div class="skill-category scroll-reveal">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-desktop" aria-hidden="true"></i>
+                        <h3>Operating Systems</h3>
+                    </div>
                     <div class="skill-tags">
-                        <span>Python</span><span>JavaScript</span><span>C/C++</span>
-                        <span>HTML/CSS</span><span>Linux</span><span>Kali Linux</span>
-                        <span>Wireshark</span><span>Nmap</span><span>Metasploit</span>
-                        <span>Burp Suite</span><span>Git</span><span>SQL</span>
-                        <span>Network Security</span><span>OWASP</span><span>CTF</span>
+                        <span>Ubuntu / Linux</span>
+                        <span>Kali Linux</span>
+                        <span>Windows 10/11</span>
                     </div>
-                    <div class="skill-bars">
-                        <div class="skill-bar"><span>Python</span>
-                            <div class="bar">
-                                <div style="width:85%"></div>
-                            </div>
+                </div>
+
+                <div class="skill-category scroll-reveal">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-code-branch" aria-hidden="true"></i>
+                        <h3>DevOps</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Jenkins</span>
+                        <span>CI/CD</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>Terraform</span>
+                    </div>
+                </div>
+
+                <div class="skill-category scroll-reveal">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-cloud" aria-hidden="true"></i>
+                        <h3>Cloud</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>AWS</span>
+                        <span>Microsoft Azure</span>
+                    </div>
+                </div>
+
+                <div class="skill-category scroll-reveal">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-server" aria-hidden="true"></i>
+                        <h3>Web / Server</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Apache</span>
+                        <span>NGINX</span>
+                        <span>LAMP</span>
+                        <span>WAMP</span>
+                        <span>PHP</span>
+                    </div>
+                </div>
+
+                <div class="skill-category scroll-reveal">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-database" aria-hidden="true"></i>
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>Database Administration</span>
+                    </div>
+                </div>
+
+                <div class="skill-category scroll-reveal">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-network-wired" aria-hidden="true"></i>
+                        <h3>Networking</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>TCP/IP</span>
+                        <span>OSI Model</span>
+                        <span>IP Addressing</span>
+                        <span>Subnetting</span>
+                        <span>DNS</span>
+                        <span>DHCP</span>
+                        <span>Routing</span>
+                        <span>Switching</span>
+                        <span>SSH</span>
+                    </div>
+                </div>
+
+                <div class="skill-category scroll-reveal">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        <h3>Security</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Nmap</span>
+                        <span>Wireshark</span>
+                        <span>Burp Suite</span>
+                        <span>Vulnerability Assessment</span>
+                        <span>Basic Cybersecurity</span>
+                    </div>
+                </div>
+
+                <div class="skill-category scroll-reveal">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-code" aria-hidden="true"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Python OOP</span>
+                        <span>C</span>
+                    </div>
+                </div>
+
+                <div class="skill-category scroll-reveal">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-tools" aria-hidden="true"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>AnyDesk</span>
+                        <span>VS Code</span>
+                        <span>MS Office</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DEVOPS & INFRASTRUCTURE -->
+    <section id="devops" class="devops section">
+        <div class="container">
+            <h2 class="section-title">DevOps &amp; <span>Infrastructure</span></h2>
+            <p class="section-intro">Hands-on working knowledge of DevOps tools and infrastructure concepts gained through internship experience and continuous learning.</p>
+            <div class="devops-layout">
+
+                <div class="devops-pipeline scroll-reveal">
+                    <h3>CI/CD Workflow</h3>
+                    <ol class="pipeline-steps" aria-label="CI/CD pipeline workflow">
+                        <li class="pipeline-step">
+                            <span class="pipeline-icon"><i class="fab fa-linux" aria-hidden="true"></i></span>
+                            <span class="pipeline-label">Linux / Ubuntu</span>
+                            <span class="pipeline-desc">System administration &amp; environment setup</span>
+                        </li>
+                        <li class="pipeline-step">
+                            <span class="pipeline-icon"><i class="fab fa-git-alt" aria-hidden="true"></i></span>
+                            <span class="pipeline-label">Git</span>
+                            <span class="pipeline-desc">Version control — branch, commit, push</span>
+                        </li>
+                        <li class="pipeline-step">
+                            <span class="pipeline-icon"><i class="fab fa-github" aria-hidden="true"></i></span>
+                            <span class="pipeline-label">GitHub</span>
+                            <span class="pipeline-desc">Repository management &amp; collaboration</span>
+                        </li>
+                        <li class="pipeline-step">
+                            <span class="pipeline-icon"><i class="fas fa-cogs" aria-hidden="true"></i></span>
+                            <span class="pipeline-label">Jenkins</span>
+                            <span class="pipeline-desc">Job configuration &amp; build monitoring</span>
+                        </li>
+                        <li class="pipeline-step">
+                            <span class="pipeline-icon"><i class="fas fa-infinity" aria-hidden="true"></i></span>
+                            <span class="pipeline-label">CI/CD Pipeline</span>
+                            <span class="pipeline-desc">Automated build &amp; deployment workflows</span>
+                        </li>
+                        <li class="pipeline-step">
+                            <span class="pipeline-icon"><i class="fas fa-server" aria-hidden="true"></i></span>
+                            <span class="pipeline-label">Apache / NGINX</span>
+                            <span class="pipeline-desc">Web server configuration &amp; support</span>
+                        </li>
+                        <li class="pipeline-step">
+                            <span class="pipeline-icon"><i class="fas fa-database" aria-hidden="true"></i></span>
+                            <span class="pipeline-label">MySQL</span>
+                            <span class="pipeline-desc">Database creation &amp; administration</span>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="devops-tools scroll-reveal">
+                    <h3>Cloud &amp; Container Tools</h3>
+                    <p class="tools-note">Hands-on learning exposure:</p>
+                    <div class="devops-tool-grid">
+                        <div class="devops-tool-card">
+                            <i class="fab fa-aws" aria-hidden="true"></i>
+                            <span>AWS</span>
+                            <small>Resource &amp; repository management</small>
                         </div>
-                        <div class="skill-bar"><span>Web Dev</span>
-                            <div class="bar">
-                                <div style="width:80%"></div>
-                            </div>
+                        <div class="devops-tool-card">
+                            <i class="fas fa-cloud" aria-hidden="true"></i>
+                            <span>Microsoft Azure</span>
+                            <small>Hands-on learning</small>
                         </div>
-                        <div class="skill-bar"><span>Cybersecurity</span>
-                            <div class="bar">
-                                <div style="width:75%"></div>
-                            </div>
+                        <div class="devops-tool-card">
+                            <i class="fab fa-docker" aria-hidden="true"></i>
+                            <span>Docker</span>
+                            <small>Hands-on learning</small>
                         </div>
-                        <div class="skill-bar"><span>Networking</span>
-                            <div class="bar">
-                                <div style="width:70%"></div>
-                            </div>
+                        <div class="devops-tool-card">
+                            <i class="fas fa-dharmachakra" aria-hidden="true"></i>
+                            <span>Kubernetes</span>
+                            <small>Hands-on learning</small>
+                        </div>
+                        <div class="devops-tool-card">
+                            <i class="fas fa-layer-group" aria-hidden="true"></i>
+                            <span>Terraform</span>
+                            <small>Hands-on learning</small>
                         </div>
                     </div>
                 </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NETWORKING -->
+    <section id="networking" class="networking section">
+        <div class="container">
+            <h2 class="section-title">Networking <span>Knowledge</span></h2>
+            <p class="section-intro">Practical networking knowledge applied in Linux system administration, server configuration and IT support tasks.</p>
+            <div class="networking-layout">
+
+                <div class="networking-concepts scroll-reveal">
+                    <h3>Core Concepts</h3>
+                    <div class="networking-grid">
+                        <div class="net-card">
+                            <i class="fas fa-sitemap" aria-hidden="true"></i>
+                            <span>TCP/IP</span>
+                        </div>
+                        <div class="net-card">
+                            <i class="fas fa-layer-group" aria-hidden="true"></i>
+                            <span>OSI Model</span>
+                        </div>
+                        <div class="net-card">
+                            <i class="fas fa-network-wired" aria-hidden="true"></i>
+                            <span>IP Addressing</span>
+                        </div>
+                        <div class="net-card">
+                            <i class="fas fa-project-diagram" aria-hidden="true"></i>
+                            <span>Subnetting</span>
+                        </div>
+                        <div class="net-card">
+                            <i class="fas fa-globe" aria-hidden="true"></i>
+                            <span>DNS</span>
+                        </div>
+                        <div class="net-card">
+                            <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+                            <span>DHCP</span>
+                        </div>
+                        <div class="net-card">
+                            <i class="fas fa-route" aria-hidden="true"></i>
+                            <span>Routing</span>
+                        </div>
+                        <div class="net-card">
+                            <i class="fas fa-random" aria-hidden="true"></i>
+                            <span>Switching</span>
+                        </div>
+                        <div class="net-card">
+                            <i class="fas fa-terminal" aria-hidden="true"></i>
+                            <span>SSH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="networking-context scroll-reveal">
+                    <h3>Applied In</h3>
+                    <ul class="net-applied-list">
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Linux server connectivity troubleshooting</li>
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> TCP/IP, DNS and DHCP configuration support</li>
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> SSH remote access and administration</li>
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> IP addressing and basic subnetting</li>
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Network performance monitoring</li>
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> AnyDesk remote support sessions</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CYBERSECURITY -->
+    <section id="cybersecurity" class="cybersecurity section">
+        <div class="container">
+            <h2 class="section-title">Cybersecurity <span>Foundation</span></h2>
+            <p class="section-intro">Entry-level cybersecurity knowledge with practical exposure to security tools and concepts in authorized lab environments.</p>
+            <div class="cyber-layout">
+
+                <div class="cyber-tools scroll-reveal">
+                    <h3>Security Tools &amp; Concepts</h3>
+                    <div class="cyber-tool-grid">
+                        <div class="cyber-tool-card">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                            <span>Nmap</span>
+                            <small>Port scanning &amp; service enumeration</small>
+                        </div>
+                        <div class="cyber-tool-card">
+                            <i class="fas fa-wave-square" aria-hidden="true"></i>
+                            <span>Wireshark</span>
+                            <small>Network traffic analysis</small>
+                        </div>
+                        <div class="cyber-tool-card">
+                            <i class="fas fa-bug" aria-hidden="true"></i>
+                            <span>Burp Suite</span>
+                            <small>Web application security testing</small>
+                        </div>
+                        <div class="cyber-tool-card">
+                            <i class="fab fa-linux" aria-hidden="true"></i>
+                            <span>Kali Linux</span>
+                            <small>Security-focused Linux distribution</small>
+                        </div>
+                        <div class="cyber-tool-card">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                            <span>Vulnerability Assessment</span>
+                            <small>Identification &amp; analysis</small>
+                        </div>
+                        <div class="cyber-tool-card">
+                            <i class="fas fa-lock" aria-hidden="true"></i>
+                            <span>Basic Cybersecurity</span>
+                            <small>Principles &amp; best practices</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cyber-context scroll-reveal">
+                    <h3>Security Project</h3>
+                    <div class="cyber-project-card">
+                        <div class="card-icon"><i class="fas fa-shield-virus" aria-hidden="true"></i></div>
+                        <h4>Basic Web Vulnerability Scanner</h4>
+                        <p>Developed a basic security testing tool using Python and Nmap for network reconnaissance and vulnerability identification. Performed port scanning, service enumeration and basic security analysis of target systems.</p>
+                        <p class="cyber-disclaimer"><i class="fas fa-info-circle" aria-hidden="true"></i> Performed in authorized lab environments only.</p>
+                        <div class="card-tags">
+                            <span>Python</span><span>Nmap</span><span>Burp Suite</span>
+                        </div>
+                        <a href="#projects" class="btn-sm ripple">View Project Details</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -111,39 +578,93 @@
     <section id="projects" class="projects section">
         <div class="container">
             <h2 class="section-title">My <span>Projects</span></h2>
-            <div class="projects-grid">
+            <div class="project-featured scroll-reveal">
+                <div class="project-featured-header">
+                    <div class="project-featured-icon"><i class="fas fa-shield-virus" aria-hidden="true"></i></div>
+                    <div>
+                        <h3>Basic Web Vulnerability Scanner</h3>
+                        <div class="card-tags">
+                            <span>Python</span><span>Nmap</span><span>Burp Suite</span><span>Kali Linux</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-featured-body">
+                    <div class="project-detail">
+                        <h4><i class="fas fa-bullseye" aria-hidden="true"></i> Objective</h4>
+                        <p>Build a basic security testing tool to understand how network reconnaissance and web vulnerability identification works in a controlled lab environment.</p>
+                    </div>
+                    <div class="project-detail">
+                        <h4><i class="fas fa-wrench" aria-hidden="true"></i> What It Does</h4>
+                        <p>Performs port scanning and service enumeration using Python and Nmap. Uses Burp Suite to intercept and analyse HTTP requests and responses for basic web application security testing.</p>
+                    </div>
+                    <div class="project-detail">
+                        <h4><i class="fas fa-graduation-cap" aria-hidden="true"></i> Learning Outcome</h4>
+                        <p>Gained practical understanding of network scanning, service fingerprinting, HTTP traffic analysis and the fundamentals of vulnerability identification.</p>
+                    </div>
+                </div>
+                <div class="project-featured-footer">
+                    <p class="project-disclaimer"><i class="fas fa-info-circle" aria-hidden="true"></i> All security testing performed in authorized lab environments only. No unauthorized systems were targeted.</p>
+                    <span class="btn-sm btn-sm-muted"><i class="fab fa-github" aria-hidden="true"></i> Repository coming soon</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="project-card scroll-reveal">
-                    <div class="card-icon"><i class="fas fa-shield-virus"></i></div>
-                    <h3>Network Vulnerability Scanner</h3>
-                    <p>A Python-based tool that scans networks for open ports, running services, and known vulnerabilities using Nmap integration and CVE databases.</p>
-                    <div class="card-tags"><span>Python</span><span>Nmap</span><span>Security</span></div>
-                    <div class="card-links">
-                        <a href="#" class="btn-sm ripple"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" class="btn-sm btn-sm-outline ripple"><i class="fas fa-external-link-alt"></i> Demo</a>
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="certifications section">
+        <div class="container">
+            <h2 class="section-title">My <span>Certifications</span></h2>
+            <div class="cert-grid">
+
+                <div class="cert-card scroll-reveal">
+                    <div class="cert-icon"><i class="fas fa-certificate" aria-hidden="true"></i></div>
+                    <div class="cert-body">
+                        <h3>Basics of Cybersecurity</h3>
+                        <p class="cert-issuer">IBM</p>
+                        <span class="cert-status cert-completed">Completed</span>
                     </div>
                 </div>
 
-                <div class="project-card scroll-reveal">
-                    <div class="card-icon"><i class="fas fa-lock"></i></div>
-                    <h3>Secure Password Manager</h3>
-                    <p>A desktop application for securely storing and managing passwords using AES-256 encryption, with a master password and breach detection feature.</p>
-                    <div class="card-tags"><span>Python</span><span>AES-256</span><span>Tkinter</span></div>
-                    <div class="card-links">
-                        <a href="#" class="btn-sm ripple"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" class="btn-sm btn-sm-outline ripple"><i class="fas fa-external-link-alt"></i> Demo</a>
+                <div class="cert-card scroll-reveal">
+                    <div class="cert-icon"><i class="fas fa-certificate" aria-hidden="true"></i></div>
+                    <div class="cert-body">
+                        <h3>Introduction to Cybersecurity</h3>
+                        <p class="cert-issuer">Cisco Networking Academy</p>
+                        <span class="cert-status cert-completed">Completed</span>
                     </div>
                 </div>
 
-                <div class="project-card scroll-reveal">
-                    <div class="card-icon"><i class="fas fa-bug"></i></div>
-                    <h3>Web Vulnerability Tester</h3>
-                    <p>A web app security testing tool that checks for common OWASP Top 10 vulnerabilities including XSS, SQL Injection, and CSRF in target web applications.</p>
-                    <div class="card-tags"><span>Python</span><span>OWASP</span><span>Burp Suite</span></div>
-                    <div class="card-links">
-                        <a href="#" class="btn-sm ripple"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" class="btn-sm btn-sm-outline ripple"><i class="fas fa-external-link-alt"></i> Demo</a>
+                <div class="cert-card scroll-reveal">
+                    <div class="cert-icon"><i class="fas fa-certificate" aria-hidden="true"></i></div>
+                    <div class="cert-body">
+                        <h3>NSE 1, NSE 2 &amp; NSE 3</h3>
+                        <p class="cert-issuer">Fortinet</p>
+                        <span class="cert-status cert-inprogress">In Progress</span>
                     </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-title">My <span>Education</span></h2>
+            <div class="timeline education-timeline">
+
+                <div class="timeline-item scroll-reveal">
+                    <span class="year">2024 – 2026</span>
+                    <h3>Master of Computer Applications (MCA)</h3>
+                    <p class="edu-institution"><i class="fas fa-university" aria-hidden="true"></i> Lloyd Institute of Engineering and Technology, Greater Noida</p>
+                    <p class="edu-score"><i class="fas fa-star" aria-hidden="true"></i> 72%</p>
+                </div>
+
+                <div class="timeline-item scroll-reveal">
+                    <span class="year">2019 – 2022</span>
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <p class="edu-institution"><i class="fas fa-university" aria-hidden="true"></i> Lloyd Institute of Engineering and Technology, Greater Noida</p>
+                    <p class="edu-score"><i class="fas fa-star" aria-hidden="true"></i> 66.19%</p>
                 </div>
 
             </div>
@@ -154,59 +675,23 @@
     <section id="resume" class="resume section">
         <div class="container">
             <h2 class="section-title">My <span>Resume</span></h2>
-            <div class="resume-grid">
-
-                <!-- LEFT: Education -->
-                <div class="resume-col scroll-reveal">
-                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <span class="year">2024 – 2026</span>
-                            <h4>Master of Computer Applications (MCA)</h4>
-                            <p>Specialization in Cybersecurity & Software Engineering</p>
-                        </div>
-                        <div class="timeline-item">
-                            <span class="year">2019 – 2022</span>
-                            <h4>Bachelor of Computer Applications (BCA)</h4>
-                            <p>Core programming, networking, and database management</p>
-                        </div>
-                        <div class="timeline-item">
-                            <span class="year">2016 – 2019</span>
-                            <h4>Higher Secondary (12th) & High School (10th)</h4>
-                            <p>UPMSP — Uttar Pradesh Madhyamik Shiksha Parishad</p>
-                        </div>
+            <div class="resume-cta scroll-reveal">
+                <div class="resume-card">
+                    <div class="resume-card-icon"><i class="fas fa-file-alt" aria-hidden="true"></i></div>
+                    <div class="resume-card-body">
+                        <h3>Vikash Mishra</h3>
+                        <p>IT Administrator &amp; DevOps Intern</p>
+                        <p class="resume-card-desc">Full resume covering IT administration experience, DevOps skills, Linux, cloud, networking, certifications and education.</p>
                     </div>
                 </div>
-
-                <!-- RIGHT: Certifications -->
-                <div class="resume-col scroll-reveal">
-                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <span class="year">2024</span>
-                            <h4> Cybersecurity </h4>
-                            <p>CISCO Introduction to Cybersecurity</p>
-                            <p>Google Skills — Network security, threat analysis, SIEM tools</p>
-                            <p>Fortinet Training Institute - Fundamentals in Cybersecurity </p>
-                            <p>Fortinet Training Institute - Fundamentals in Cybersecurity </p>
-                        </div>
-                        <div class="timeline-item">
-                            <span class="year">2024</span>
-                            <h4>Ethical Hacking Essentials (EHE - learning)</h4>
-                            <p>EC-Council — Penetration testing fundamentals</p>
-                            <p>By Ansh Bhawnani — Penetration testing fundamentals</p>
-                        </div>
-                        <div class="timeline-item">
-                            <span class="year">2023</span>
-                            <h4>Python for Cybersecurity</h4>
-                            <p>By Udemy — Scripting for security automation</p>
-                        </div>
-                    </div>
-                    <a href="assets/Vikash-ATS.pdf" download class="btn ripple" style="margin-top:1.5rem;display:inline-block">
-                        <i class="fas fa-download"></i> Download Full Resume
+                <div class="resume-btns">
+                    <a href="assets/Vikash-ATS.pdf" target="_blank" rel="noopener noreferrer" class="btn ripple" aria-label="View resume PDF in a new tab">
+                        <i class="fas fa-eye" aria-hidden="true"></i> View Resume
+                    </a>
+                    <a href="assets/Vikash-ATS.pdf" download="Vikash_Mishra_Resume.pdf" class="btn btn-outline ripple" aria-label="Download resume as PDF">
+                        <i class="fas fa-download" aria-hidden="true"></i> Download PDF
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
@@ -218,41 +703,71 @@
             <div class="contact-grid">
                 <div class="contact-info scroll-reveal">
                     <h3>Let's Connect</h3>
-                    <p>Open to internships, collaborations, and cybersecurity opportunities. Feel free to reach out!</p>
+                    <p>Open to IT Administrator, System Administrator, Linux Support and Junior DevOps opportunities. Feel free to reach out.</p>
                     <div class="contact-items">
-                        <div class="contact-item"><i class="fas fa-envelope"></i><span>vikashmishra0713@gmail.com</span></div>
-                        <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>India</span></div>
-                        <div class="contact-item"><i class="fas fa-phone"></i><span>+91 8528143401</span></div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:vikashmishra0713@gmail.com">vikashmishra0713@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <a href="tel:+918528143401">+91-8528143401</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>Greater Noida, India</span>
+                        </div>
                     </div>
                 </div>
-                <form class="contact-form scroll-reveal" id="contact-form">
+                <form class="contact-form scroll-reveal" id="contact-form" novalidate>
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required />
+                        <label for="name">Your Name <span aria-hidden="true">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="name" />
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required />
+                        <label for="email">Your Email <span aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="email" />
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Subject" />
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" autocomplete="off" />
                     </div>
                     <div class="form-group">
-                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <label for="message">Message <span aria-hidden="true">*</span></label>
+                        <textarea rows="5" id="message" name="message" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn ripple">Send Message <i class="fas fa-paper-plane"></i></button>
+                    <p class="form-note"><i class="fas fa-info-circle" aria-hidden="true"></i> This form is not yet connected to a mail service. To get in touch directly, please email <a href="mailto:vikashmishra0713@gmail.com">vikashmishra0713@gmail.com</a>.</p>
+                    <button type="submit" class="btn ripple">Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
                 </form>
             </div>
         </div>
     </section>
 
+    </main>
+
     <!-- FOOTER -->
     <footer>
         <div class="container footer-inner">
-            <p>&copy; 2026 Vikash Mishra. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="HackTheBox"><i class="fas fa-cube"></i></a>
+            <div class="footer-info">
+                <p class="footer-name">Vikash Mishra</p>
+                <p class="footer-title">IT Administrator | DevOps Intern | Linux &amp; Cloud Support</p>
+                <p class="footer-copy">&copy; 2026 Vikash Mishra. All rights reserved.</p>
+            </div>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="#home">Home</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="footer-contact">
+                <a href="mailto:vikashmishra0713@gmail.com" aria-label="Email Vikash Mishra">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
+                <a href="tel:+918528143401" aria-label="Call Vikash Mishra">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </footer>
